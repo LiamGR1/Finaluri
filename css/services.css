@@ -1,0 +1,29 @@
+.services_container{
+    width: 1200px;
+    margin: auto 0 auto 50px;
+}
+.wrapper{
+    padding: 20px;
+}
+.services_content .name{
+    margin: 10px;
+    font-size: 18px;
+}
+.services_content .description {
+    margin: 0 5px;
+}
+.link {
+    text-decoration: none;
+    color: black;
+}
+.news{
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin: 32px;
+}
+img {
+    width: 300px;
+    padding: auto;
+}

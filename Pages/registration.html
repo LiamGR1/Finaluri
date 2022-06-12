@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="../css/registration.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css"">
+
+</head>
+<body>
+    <header class="header-section">
+        <div class="banner"> 
+          <div class="navbar">
+                <a href="../index.html" class="home">მთავარი</a>
+                <a href="aboutUs.html" class="aboutus">ჩვენს შესახებ</a>
+                <a href="shop.html" class="shop">მაღაზია</a>
+                <a href="Contact.html" class="contact">კონტაქტი</a>
+                <a href="services.html" class="services">სერვისები</a>
+                <a href="registration.html" class="register">რეგისტრაცია</a>
+                <a href="login.html" class="login">ავტორიზაცია</a>
+              <div class="change-lang">
+                  <button type="button" id="english" class="btn btn-outline-success">En</button>
+                  <button type="button" id="georgia" class="btn btn-outline-danger">Geo</button>
+
+              </div>
+              </div>
+        </div>
+      
+      </header>
+    <div class="wrapper">
+        <div class="title registrationform">
+            Registration Form
+        </div>
+        <div class="form">
+            <div class="input_field">
+                <label class="name">სახელი</label>
+                <input type="text" class="input" id="contact-name" onkeyup="validateName()">
+                <span id="name-error" class="enterName">შეიყვანეთ სახელი</span>
+            </div>
+            <div class="input_field">
+                <label class="password1">პაროლი</label>
+                <input type="password" class="input" id="contact-password" onkeyup="validatePassword()">
+                <span id="password-error" class="passwordDontMatch">პაროლი არ ემთხვევა</span>
+            </div>
+            <div class="input_field">
+                <label class="confirmPassword">დაადასტურე პაროლი</label>
+                <input type="password" class="input" id="contact-password1" onkeyup="validatePasswordAgain()">
+                <span id="password-error1" class="passwordDontMatch1" >პაროლი არ ემთხვევა</span>
+            </div>
+            <div class="input_field">
+                <label class="gender">სქესი</label>
+                <div class="custom_select">
+                    <select>
+                        <option value="" class="choose">აირჩიე</option>
+                        <option value="მამრობითი" class="male">მამრობითი</option>
+                        <option value="მდედრობითი" class="female">მდედრობითი</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input_field">
+                <label class="email1">Email</label>
+                <input type="text" class="input" id="contact-email" onkeyup="validateEmail()">
+                <span id="email-error" class="enterMail">შეიყვანეთ მეილი</span>
+            </div>
+            <div class="input_field">
+                <label class="phoneNumber">ტელეფონის ნომერი</label>
+                <input type="text" class="input" id="contact-phone" onkeyup="validatePhone()">
+                <span id="phone-error" class="enterNumber">შეიყვანეთ ნომერი</span>
+            </div>
+            <div class="input_field">
+                <label class="country">ქვეყანა</label>
+                <textarea class="textarea"></textarea>
+            </div>
+            <div class="input_field">
+                <label class="city">ქალაქი</label>
+                <textarea class="textarea"></textarea>
+            </div>
+            <div class="input_field">
+                <input type = "submit" value="რეგისტრაცია" class="btn">
+            </div>
+        </div>
+    </div>
+<script src="../js/registration.js"></script>
+    <script src="../js/registerLang.js"></script>
+</body>
+</html>

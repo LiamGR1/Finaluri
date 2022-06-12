@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+    <header class="header-section">
+        <div class="banner"> 
+          <div class="navbar">
+                <a href="../index.html" class="home">მთავარი</a>
+                <a href="aboutUs.html" class="aboutus">ჩვენს შესახებ</a>
+                <a href="shop.html" class="shop">მაღაზია</a>
+                <a href="Contact.html" class="contact">კონტაქტი</a>
+                <a href="services.html" class="services">სერვისები</a>
+                <a href="registration.html" class="register">რეგისტრაცია</a>
+                <a href="login.html" class="login">ავტორიზაცია</a>
+                <div class="change-lang">
+                    <button type="button" id="english" class="btn btn-outline-success">En</button>
+                    <button type="button" id="georgia" class="btn btn-outline-danger">Geo</button>
+            
+                </div>
+              </div>
+        </div>
+      
+      </header>
+      <div class="wrapper">
+        <div class="title login1">
+            Login
+        </div>
+        <div class="form">
+            <div class="input_field">
+                <label class="email">Email</label>
+                <input type="text" class="input" id="contact-email" onkeyup="validateEmail()">
+            </div>
+            <div class="input_field">
+                <label class="password">პაროლი</label>
+                <input type="password" class="input" id="contact-password" onkeyup="validatePassword()">
+            </div>
+
+            <div class="input_field">
+                <input type = "submit" value="ავტორიზაცია" class="btn login2">
+            </div>
+            <div class="sign_up">
+                "Not a Member"
+                <a href="../Pages/registration.html">Sign Up</a>
+            </div>
+        </div>
+    </div>
+    <script src="../js/loginLang.js"></script>
+</body>
+</html>

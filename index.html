@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+<body>
+<header class="header-section">
+  <div class="banner"> 
+    <div class="navbar">
+          <a href="index.html" class="home">მთავარი</a>
+          <a href="Pages/aboutUs.html" class="aboutus">ხებ</a>
+          <a href="Pages/shop.html" class="shop">მაღაზია</a>
+          <a href="Pages/Contact.html" class="contact">კონტაქტი</a>
+          <a href="Pages/services.html" class="services">სერვისები</a>
+          <a href="Pages/registration.html" class="register">რეგისტრაცია</a>
+          <a href="Pages/login.html" class="login">ავტორიზაცია</a>
+          <div class="change-lang">
+            <button type="button" id="english" class="btn btn-outline-success">En</button>
+            <button type="button" id="georgia" class="btn btn-outline-danger">Geo</button>
+    
+        </div>
+        </div>
+  </div>
+
+</header>
+<!-- Slider -->
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <img src="img/products/slider3.jpg" style="width:100%">
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="img/products/slider2.jpg" style="width:100%">
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="img/products/slider4.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="img/products/slider1.webp" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="img/products/slider5.jpg" style="width:100%">
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(4)"></span> 
+    <span class="dot" onclick="currentSlide(5)"></span> 
+
+  </div>
+<!-- PRODUCTS -->
+  <section class="product"> 
+  <h2 class="product-category productsale">ფასდაკლება პროდუქტებზე</h2>
+  <button class="pre-btn"><img src="img/arrow.png" alt=""></button>
+  <button class="nxt-btn"><img src="img/arrow.png" alt=""></button>
+  <div class="product-container">
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <img src="img/products/1-122.png" class="product-thumb" alt="">
+              <button class="card-btn lang-wishlist1">add to wishlist</button>
+          </div>
+          <div class="product-info">
+              <h2 class="product-brand">Vention</h2>
+              <p class="product-short-description lang-internet">ინტერნეტის კაბელის ჯეკი </p>
+              <span class="price">0.50₾</span><span class="actual-price">1₾</span>
+          </div>
+      </div>
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <img src="img/products/80835_1_crt8-xe_5ksr-p7.jpg" class="product-thumb" alt="">
+              <button class="card-btn wishlist2">add to wishlist</button>
+          </div>
+          <div class="product-info">
+              <h2 class="product-brand">Kingston</h2>
+              <p class="product-short-description">SSD Kingston A400 480 GB –</p>
+              <span class="price">90₾</span><span class="actual-price">180.00₾</span>
+          </div>
+      </div>
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">17% off</span>
+              <img src="img/products/laptop.png" class="product-thumb" alt="">
+              <button class="card-btn wishlist3">add to wishlist</button>
+          </div>
+          <div class="product-info">
+              <h2 class="product-brand">HP</h2>
+              <p class="product-short-description">Hp 255 G8</p>
+              <span class="price">1,199.00₾</span><span class="actual-price">1,439.00₾</span>
+          </div>
+      </div>
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">29% off</span>
+              <img src="img/products/headphones.png" class="product-thumb" alt="">
+              <button class="card-btn wishlist4">add to wishlist</button>
+          </div>
+          <div class="product-info">
+              <h2 class="product-brand">Razer</h2>
+              <p class="product-short-description">Razer Gaming Headset</p>
+              <span class="price">255.00₾</span><span class="actual-price">357.00₾ </span>
+          </div>
+      </div>
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">29% off</span>
+              <img src="img/products/mouse.png" class="product-thumb" alt="">
+              <button class="card-btn wishlist5">add to wishlist</button>
+          </div>
+          <div class="product-info">
+              <h2 class="product-brand">Razer</h2>
+              <p class="product-short-description">Razer Gaiming mouse</p>
+              <span class="price">445.00₾</span><span class="actual-price">627.00₾ </span>
+          </div>
+      </div>
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">17% off</span>
+              <img src="img/products/Dual RTX.png" class="product-thumb" alt="">
+              <button class="card-btn wishlist6">add to wishlist</button>
+          </div>
+          <div class="product-info">
+              <h2 class="product-brand">Palit</h2>
+              <p class="product-short-description">Dual RTX 3050 8 GB LHR</p>
+              <span class="price">1,370.00₾</span><span class="actual-price">1,650.00₾</span>
+          </div>
+      </div>
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">21% off</span>
+              <img src="img/products/Earbuds.jpg" class="product-thumb" alt="">
+              <button class="card-btn wishlist7">add to wishlist</button>
+          </div>
+          <div class="product-info">
+              <h2 class="product-brand">HyperX</h2>
+              <p class="product-short-description">HyperX Cloud Earbuds</p>
+              <span class="price">95.00₾</span><span class="actual-price">120.00₾</span>
+          </div>
+      </div>
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">15% off</span>
+              <img src="img/products/PC.png" class="product-thumb" alt="">
+              <button class="card-btn wishlist8">add to wishlist</button>
+          </div>
+          <div class="product-info">
+              <h2 class="product-brand"></h2>
+              <p class="product-short-description">i5 9400F • 16GB • GTX 1650 4GB • 480GB • 500W</p>
+              <span class="price">2,050.00₾</span><span class="actual-price">2,400.00₾</span>
+          </div>
+      </div>
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">19% off</span>
+              <img src="img/products/keyboard.png" class="product-thumb" alt="">
+              <button class="card-btn wishlist9 ">add to wishlist</button>
+          </div>
+          <div class="product-info">
+              <h2 class="product-brand">Varmilo</h2>
+              <p class="product-short-description">Varmilo Keyboard VA108M Moonlight Cherry MX Blue</p>
+              <span class="price">425.00₾</span><span class="actual-price">520.00₾ </span>
+          </div>
+      </div>
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">12% off</span>
+              <img src="img/products/Monitor.png" class="product-thumb" alt="">
+              <button class="card-btn wishlist10">add to wishlist</button>
+          </div>
+          <div class="product-info">
+              <h2 class="product-brand">Philips</h2>
+              <p class="product-short-description">Philips 273V7QDAB</p>
+              <span class="price">679.00₾</span><span class="actual-price">770.00₾</span>
+          </div>
+      </div>
+  </div>
+</section>
+</body>
+
+<script src="js/main.js"></script>
+<script src="js/carousel.js"></script>
+<script src="js/lang.js" ></script>
+</html>
